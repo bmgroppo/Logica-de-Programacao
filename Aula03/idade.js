@@ -16,3 +16,4 @@ function idade() {
 document.writeln(`Ainda não tem idade pra votar`);
     }
 }
+
