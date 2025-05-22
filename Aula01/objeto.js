@@ -1,4 +1,4 @@
-/*//Objeto em JavaScript
+//Objeto em JavaScript
 // Objeto é uma coleção de propriedades
 const usuario = {
     nome: "Carlos",
@@ -8,7 +8,7 @@ const usuario = {
 usuario.idade=26; // Reatribuição de valor
 console.log(usuario); // { nome: 'Carlos', idade: 26 }
 // Objeto é uma coleção de pares chave-valor
-*/
+
 //Array é um tipo especial de objeto
 const numeros = [1, 2, 3]; // Array de números
 numeros.push(4); // Adiciona o valor 4 ao array
