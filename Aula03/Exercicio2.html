@@ -1,0 +1,37 @@
+<!-- 02 Crie um programa que receba 10 números e no final mostra a quantidade de números pares e ímpares digitados. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 2</title>
+  </head>
+  <body>
+    <h1>Exercício 2</h1>
+    <h2>Separar Números Imparaes e Pares</h2>
+      <script>
+          let contador = 1;
+          let pares = 0;
+          let impares = 0;
+
+          while (contador <= 10) {
+            let numero = Number(prompt(`Digite o ${contador}º número de 10:`));
+            if (!isNaN(numero)) {
+              if (numero % 2 === 0) {
+                pares++;
+              } else {
+                impares++;
+              }
+              contador++;
+            } else {
+              alert("Valor inválido. Tente novamente.");
+            }
+          }
+
+  document.writeln(`Quantidade de números pares: ${pares}<br>`);
+  document.writeln(`Quantidade de números ímpares: ${impares}`);
+</script>
+    
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!-- 01 Crie um programa que receba 6 números e no final apresente a média destes números. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Idade</title>
+  </head>
+  <body>
+    <h1>Exercício 1</h1>
+    <h2>Calcular a média de números</h2>
+
+    <script>
+      let numeroInformado = 0;
+      let mediaDesejada = 0;
+      let mediaTotal = 0;
+      let contador = 0;
+
+      mediaDesejada = Number(prompt(`Digite com quantos números quer fazer uma Média:`));
+      if (!isNaN(mediaDesejada)) {
+        while (contador < mediaDesejada) {
+            numeroInformado = Number(prompt(`Digite o ${contador + 1}º número de ${mediaDesejada} escolhidos:`));
+            if (!isNaN(numeroInformado)) {
+            mediaTotal += numeroInformado;
+            contador++;
+            } else {
+            alert("Valor inválido. Tente novamente.");
+        }
+      }
+      document.writeln(`A média dos números informados é: ${(mediaTotal / mediaDesejada).toFixed(2)}`);
+        } else {
+            alert("Valor inválido. Recarregue a página.");
+        }
+    </script>
+  </body>
+</html>
