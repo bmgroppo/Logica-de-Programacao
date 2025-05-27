@@ -34,26 +34,4 @@ function estoque (){
     let saida = 0;
     let opcao;
 
-    while (opcao !=="sair"){
-
-    }
-    switch (saldo){
-        case "1":
-            saldo += Number(prompt("Digite a quantidade da ENTRADA de produtos"));
-        return
-        
-        case "2":
-            saldo -= Number(prompt("Digite a quantidade da SAÍDA de produtos"));
-        return
-
-        case "3":
-            prompt(`O saldo atual é ${saldo}`);
-        return
-
-        case "sair":
-            break
-        default:
-            alert("comando inválido")
-    }
-
-}
+   
