@@ -25,8 +25,12 @@ function exercicio2c(){
 
 function exercicio3() {
     let numero = Number(prompt("Digite um número:"));
-    
-    document.writeln(`O número antecessor é ${numero-1} e o número posterior é ${numero+1} <br>`);
+        if(isNaN(numero)){
+            alert("Não é um número , seu animal!!!");
+            return
+        }
+        else {document.writeln(`O número antecessor é ${numero-1} e o número posterior é ${numero+1} <br>`);
+    }
 }
 
 function exercicio4() {
