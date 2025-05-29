@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Crie uma Matriz 4 x 4</h2>
+    <button onclick="matriz()">Matriz 4x4</button>
+
+    <script>
+        function matriz (){
+        let dados = []
+        for (let linha = 0; linha < 4; linha++) {
+            dados[linha] = [];
+            for (let coluna = 0; coluna < 4; coluna++) {
+                dados[linha][coluna] = prompt(`Digite o valor para a posição [${linha}][${coluna}]: `);
+            }
+        }
+        //Montar a tabela HTML
+        document.writeln("<table border='1' style='border-collapse:collapse; text-align:center;'>")
+        for (let linha = 0; linha < 4; linha++) {
+            document.writeln("<tr>");
+            for (let coluna = 0; coluna < 4; coluna++) {
+                document.writeln(`<td style='padding:10px;'>${dados[linha][coluna]} </td>`);
+            }
+            document.writeln("</tr>");
+        }
+        document.writeln("</table>");
+    }
+    </script>
+</body>
+
+</html>
