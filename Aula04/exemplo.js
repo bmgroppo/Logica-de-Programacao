@@ -1,32 +1,68 @@
-//Teste com switch case todos os dias da semana, caso não seja 
-// um dia válido, apareça "dados inválidos."
-// 1 - segunda, 2 - terça , 3 - quarta.. , outros números - "dados inválidos"
+// Teste todos os dias da seman caso não seja 
+// um dia valido apareça dados invalidos
+// 1 - segunda 2 - terça 3 quarta 4 quinta 5 sexta 6 sabado 7 domingo 
 
-let dia = 1;
+// let semana = 1
 
-switch(dia) {
-    default:
-        console.log("Dados inválidos.");
-        break;
-    case 1:
-        console.log("Hoje é segunda-feira: Começo da semana.");
-        break;
+// for (let i = 1; i < 9; i++) {
+//     semana = i
+//     console.log(`Quando a escolha for ${semana} o dia será:`)
+
+
+//     switch (semana) {
+//         case 1:
+//             console.log('segunda-feira')
+//             break
+//         case 2:
+//             console.log('terça-feira')
+//             break
+//         case 3:
+//             console.log('quarta-feira')
+//             break
+//         case 4:
+//             console.log('quinta-feira')
+//             break
+//         case 5:
+//             console.log('sexta-feira')
+//             break
+//         case 6:
+//             console.log('sabádo')
+//             break
+//         case 7:
+//             console.log('Domingo')
+//             break
+//         default:
+//             console.log('Dados inválidos')
+//             break
+//     }
+// }
+
+
+let semana = 1
+
+switch(semana){
+    case 1 :
+    console.log('segunda-feira')
+    break
     case 2:
-        console.log("Hoje é terça-feira: Dia de trabalho.");
-        break; 
+    console.log('terça-feira')
+    break
     case 3:
-        console.log("Hoje é quarta-feira: Meio da semana.");
-        break;
+    console.log('quarta-feira')
+    break
     case 4:
-        console.log("Hoje é quinta-feira: Quase lá.");
-        break;
+    console.log('quinta-feira')
+    break
     case 5:
-        console.log("Hoje é sexta-feira: Fim de semana chegando!");
-        break
+    console.log('sexta-feira')
+    break
     case 6:
-        console.log("Hoje é sábado: Dia de descanso.");
-        break;
+    console.log('sabádo')
+    break
     case 7:
-        console.log("Hoje é domingo: Preparando para a próxima semana.");
-        break;
+    console.log('Domingo')
+    break
+    default:
+    console.log('Dados inválidos')
+    break
 }
